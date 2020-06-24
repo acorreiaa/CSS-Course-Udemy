@@ -26,3 +26,15 @@ h1{
     background-color: #2ddf5c;
     padding: 8px 16px;
 }
+.main-div{
+    display: inline-block;
+    margin: 5px 10px;
+}  
+.main-nav{
+    display: inline-block;
+}
+.main-nav_item{
+    list-style: none;
+    display: inline-block;
+    margin: 5px 10px;
+}
