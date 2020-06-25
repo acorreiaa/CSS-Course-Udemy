@@ -26,15 +26,27 @@ h1{
     background-color: #2ddf5c;
     padding: 8px 16px;
 }
-.main-div{
+.main-header > div{
     display: inline-block;
-    margin: 5px 10px;
-}  
+    vertical-align: 22pxmiddle;
+}
+.main-header_brand{
+    color: #0e4f1f;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
 .main-nav{
     display: inline-block;
+    text-align: right;
+    width: calc(100% - 74px);
+    vertical-align: middle;
+}
+.main-nav_items{
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 .main-nav_item{
-    list-style: none;
     display: inline-block;
-    margin: 5px 10px;
 }
