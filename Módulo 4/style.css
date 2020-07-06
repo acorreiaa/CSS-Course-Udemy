@@ -13,9 +13,23 @@ a{
     color: white;
     margin: 10px;
 }
-
+a.active{
+   color: #521751;
+}
+/*não recomendado
+a:not(:active) {
+    color: blue;
+}*/
+/*forma melhor*/
+a{
+    color: blue;
+}
 .main-section{
-    height: 880px;
+    height: 800px;
     border: 1px solid #cccc;
     padding: 16px;
+}
+
+.highlighted{
+    border: 2px solid #fa923f;
 }
