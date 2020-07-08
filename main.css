@@ -11,9 +11,7 @@ body{
     height: 528px;
     padding: 10px;
 }
-.section-title{
-    color: #2ddf5c;
-}
+
 #product-overview{     
     background: url("img/freedom.jpg");          
     width: 100%;
@@ -29,7 +27,7 @@ body{
     font-family: 'Anton', sans-serif;
 }
 .plan{
-    background: #d5ffd5;
+    background: #d5ffd5; 
     text-align: center;
     padding: 16px;
     margin: 8px;
@@ -76,7 +74,32 @@ body{
     border: 1.5px solid #0e4f1f;
     padding: 8px;
     border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
 }
+.button:hover,
+.button:active {
+    background: white;
+    color: #0e4f1f;
+}
+#key-features {
+    background: #ff1b68;
+    margin-top: 80px;
+    padding: 16px;
+}
+#key-features .section-title {
+    color: white;
+    margin: 32px;
+}
+.key-list li{
+    color: white;
+    display: inline-block;
+    margin: 10px;
+    font: bold;
+}
+/*.button:focus {
+    outline: none;
+}--para deixar sem a outline(aquela linha em volta indicando onde você está)*/
 /*h1{
     font-family: sans-serif
 }*/
