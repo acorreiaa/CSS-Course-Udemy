@@ -57,3 +57,4 @@ element=tags
 Cascating=várias regras podem ser aprlicada para o mesmo elemento.
 * = seletor universal-seleciona tudo, porem tem um valor menor que um
 inherit=herança
+ctrl f: procura a palavra (tipo um ctrl g no google)
