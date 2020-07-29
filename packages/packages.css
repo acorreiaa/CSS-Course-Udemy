@@ -16,7 +16,7 @@ main {
     border-left: none;
     margin: 16px 0;
     position: relative;
-    z-index: 0;
+    z-index: 1;
 } 
 /*.package:hover, .package:active, #free:hover,  #free:active */
 /*Evitar reescrever atributos (free hover e free active) e também usar important = evitar usar*/
