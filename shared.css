@@ -27,8 +27,15 @@ body{
     text-decoration: none;
     font-weight: bold;
     font-size: 22px;
+    height: 22px;
+    /*width: 20px;*/
+    display: inline-block; /*precisa ser inline-block para o filho (no caso img) respeitar*/
 }
 
+.main-header_brand img{
+    height: 100%;
+    /*width: 100%*/    
+}
 .main-nav{
     display: inline-block;
     text-align: right;
