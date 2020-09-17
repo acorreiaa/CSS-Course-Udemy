@@ -132,16 +132,12 @@
     text-align: center;
 }
 
-.key-feature{
-    display: inline;
-    width: 100%;
-    vertical-align: top;
-}
-
 @media (min-width: 40rem) {
     .key-feature{
         display: inline-block;
         width: 30%;
+        max-width: 25rem;
+        vertical-align: top;
     }
 }
 

@@ -37,12 +37,11 @@ body{
     background: transparent;
     border: none;
     cursor: pointer;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0;
     vertical-align: middle;
 }
 
-.toggle-button:focus {
+.toggle-button {
     outline: none;
 }
 
@@ -52,6 +51,17 @@ body{
     background:  black;
     display: block;
     margin: 0.6rem 0;
+}
+
+@media (min-width: 40rem) {
+    .toggle-button {
+        display: none;
+        width: 3rem;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        vertical-align: middle;
+    }    
 }
 
 .main-header_brand{
@@ -67,15 +77,17 @@ body{
 
 .main-header_brand img{
     height: 100%;
-    /*width: 100%*/    
+    /*width: 100%;*/
 }
+
 .main-nav{
-    display: inline-block;
+    display: none;
     text-align: right;
     width: calc(100% - 122px);
     vertical-align: middle;
 }
-.main-nav_item{
+
+/*.main-nav_item{
     display: inline-block;
     margin: 0 1rem; 
 }
@@ -84,6 +96,26 @@ body{
     margin: 0;
     padding: 0;
     list-style: none;
+}*/
+
+@media (min-width: 40rem) {
+    .main-nav{
+        display: inline-block;
+        text-align: right;
+        width: calc(100% - 122px);
+        vertical-align: middle;
+    }
+
+    .main-nav_item{
+        display: inline-block;
+        margin: 0 1rem; 
+    }
+
+    .main-nav_items{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }    
 }
 
 .main-nav_item a, 
@@ -132,8 +164,17 @@ body{
 }
 
 .main-footer__link {
-    display: inline-block;
-    margin: 0 1rem;
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 40rem) {
+    .main-footer__link {
+        display: inline-block;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
 }
 
 .main-footer__link a {
