@@ -26,7 +26,7 @@
     font-size: 1.6rem;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 40rem) and (min-height: 40rem) {
     #product-overview {
         height: 40vh;
         background-position: 50% 25%;
@@ -64,7 +64,7 @@
     background: white;
     color: #19b84c;
     padding: 0.5rem;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
 }
 
@@ -92,7 +92,6 @@
 
 .plan__feature{
     margin: 0.5rem 0;
-    padding: 0;
 }
 
 @media (min-width: 40rem) {
@@ -132,14 +131,7 @@
     text-align: center;
 }
 
-@media (min-width: 40rem) {
-    .key-feature{
-        display: inline-block;
-        width: 30%;
-        max-width: 25rem;
-        vertical-align: top;
-    }
-}
+
 
 .key-feature__image{
     background: #ffcede;
@@ -156,6 +148,15 @@
     font-weight: bold;
     color: white;
     font-size: 1.2rem;
+}
+
+@media (min-width: 40rem) {
+    .key-feature{
+        display: inline-block;
+        width: 30%;
+        max-width: 25rem;
+        vertical-align: top;
+    }
 }
 
 .modal {

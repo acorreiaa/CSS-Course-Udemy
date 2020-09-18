@@ -37,11 +37,12 @@ body{
     background: transparent;
     border: none;
     cursor: pointer;
-    padding: 0;
+    padding-top: 0;
+    padding-bottom: 0;
     vertical-align: middle;
 }
 
-.toggle-button {
+.toggle-button:focus {
     outline: none;
 }
 
@@ -56,11 +57,6 @@ body{
 @media (min-width: 40rem) {
     .toggle-button {
         display: none;
-        width: 3rem;
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        vertical-align: middle;
     }    
 }
 
@@ -69,25 +65,21 @@ body{
     text-decoration: none;
     font-weight: bold;
     font-size: 1.3rem;
-    height: 22px;
     /*width: 20px;*/
     display: inline-block; /*precisa ser inline-block para o filho (no caso img) respeitar*/
     vertical-align: middle;
 }
 
 .main-header_brand img{
-    height: 100%;
+    height: 2.5rem;
     /*width: 100%;*/
 }
 
 .main-nav{
     display: none;
-    text-align: right;
-    width: calc(100% - 122px);
-    vertical-align: middle;
 }
 
-/*.main-nav_item{
+.main-nav_item{
     display: inline-block;
     margin: 0 1rem; 
 }
@@ -96,13 +88,13 @@ body{
     margin: 0;
     padding: 0;
     list-style: none;
-}*/
+}
 
 @media (min-width: 40rem) {
     .main-nav{
         display: inline-block;
         text-align: right;
-        width: calc(100% - 122px);
+        width: calc(100% - 44px);
         vertical-align: middle;
     }
 
