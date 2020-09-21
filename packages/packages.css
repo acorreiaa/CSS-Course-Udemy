@@ -84,32 +84,24 @@ main {
     color: #bbb;
 }
 
-
-/*
- .plan__a {
-    text-decoration: none;
-} 
-
-.plan__h1 {
-    color: black;
+@media (min-width: 40rem) {
+    main {
+        margin: 3rem auto;
+        max-width: 1500px;
+    }
 }
 
-.plan__h2 {
-    color: #858585;
-}
+@media (min-width: 1500px) {
+    .packages {
+        border-left: 4px solid #0e4f1f;
+    }
 
-.plan--top {
-    background: #0e4f1f;
-}
+    #free {
+        border-right: 4px solid #0e4f1f;
+    }
 
-.plan--h1__top {
-    color: white;
-}
-
-.plan__p {
-    background: white;
-    color:#0e4f1f;
-    padding: 16px;
-    margin: 30px;
-    border: 2px solid #0e4f1f;
+    #free:hover,
+    #free:active {
+        border-right-color: #ff5454;
+    }
 }
