@@ -36,7 +36,11 @@ main {
     background: #2ddf5c;
     padding: 0.5rem 1rem;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
 
 .main-header > div {
     display: inline-block;
@@ -75,14 +79,12 @@ main {
     color: #0e4f1f;
     text-decoration: none;
     font-weight: bold;
-    height: 2.5rem;
     /*width: 20px;*/
-    display: inline-block; /*precisa ser inline-block para o filho (no caso img) respeitar*/
-    vertical-align: middle;
 }
 
 .main-header_brand img{
     height: 2.5rem;
+    vertical-align: middle;
     /*width: 100%;*/
 }
 
@@ -99,14 +101,16 @@ main {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
 }
 
 @media (min-width: 40rem) {
     .main-nav{
-        display: inline-block;
+        /*display: inline-block;
         text-align: right;
         width: calc(100% - 44px);
-        vertical-align: middle;
+        vertical-align: middle;*/
+        display: flex;
     }
 
     .main-nav_item{
@@ -164,6 +168,10 @@ main {
     margin: 0;
     padding: 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*as margens só se juntam qnd ´display block*/
 }
 
 .main-footer__link {
@@ -177,6 +185,11 @@ main {
         display: inline-block;
         margin-left: 1rem;
         margin-right: 1rem;
+    }
+
+    .main-footer__links {
+        flex-direction: row;
+        justify-content: center;
     }
 }
 
@@ -205,9 +218,12 @@ main {
     width: 90%;
     height: 100%;
     list-style: none;
-    margin: 10% auto;
+    margin: 0 auto;
     padding: 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .mobile-nav__item {
