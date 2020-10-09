@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400,700');
 
-    box-sizing: border-box; {
-
+* {
+    box-sizing: border-box; 
 }
 
 
@@ -35,7 +35,7 @@ main {
     left: 0;   
     background: #2ddf5c;
     padding: 0.5rem 1rem;
-    z-index: 1;
+    z-index: 5;
     display: flex;
     align-items: center;
     justify-content: space-between;
