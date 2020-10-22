@@ -23,8 +23,7 @@ body {
     flex-wrap: wrap;
     /*flex-flow: row wrap;(shorthand pro flex-direction+flex-wrap;*/
     align-items: center;
-    justify-content: center;
-    align-content: center;
+    justify-content: flex-start;
 
 }
 
