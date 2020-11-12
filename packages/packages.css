@@ -24,6 +24,9 @@ main {
 .package:hover, .package:active {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     border-color: #ff5454 !important;
+    /*transform-origin: initial;
+    transform: translateY(-1rem);*/
+    animation: package-up .2s ease-out forwards;
 }
 
 .package a {
@@ -108,5 +111,14 @@ main {
     #free:hover,
     #free:active {
         border-right-color: #ff5454;
+    }
+}
+
+@keyframes package-up {
+    from {
+        transform: translateY(0);  
+    }
+    to {
+        transform: translateY(-.6rem);
     }
 }
